@@ -12,7 +12,7 @@
             <StackLayout
                 Padding="5">
                 <Image
-                    Source="onu"
+                    Source="Logo4GL"
                     WidthRequest="200">
                 </Image>
                 <Grid
@@ -78,7 +78,7 @@
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
                     <Button
-                        BackgroundColor="Navy"
+                        BackgroundColor="CadetBlue"
                         BorderRadius="23"
                         Command="{Binding LoginCommand}"
                         HeightRequest="46"
@@ -88,7 +88,7 @@
                         TextColor="White">
                     </Button>
                     <Button
-                        BackgroundColor="Purple"
+                        BackgroundColor="CadetBlue"
                         BorderRadius="23"
                         HeightRequest="46"
                         HorizontalOptions="FillAndExpand"
