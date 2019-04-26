@@ -24,8 +24,8 @@
                 };
             }
 
-            var isReachable = await CrossConnectivity.Current.IsRemoteReachable(
-                "google.com");
+   /*         bool isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com", 1000);
+                                
             if (!isReachable)
             {
                 return new Response
@@ -33,7 +33,7 @@
                     IsSuccess = false,
                     Message = "Check you internet connection.",
                 };
-            }
+            }*/
 
             return new Response
             {
