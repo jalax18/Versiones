@@ -9,8 +9,8 @@
 
     public class LoginViewModel : BaseViewModel
     {
-      /*
-	  #region Services
+
+        #region Services
         private ApiService apiService;
         #endregion
 
@@ -61,7 +61,7 @@
             this.IsRemembered = true;
             this.IsEnabled = true;
 
-            this.Email = "jzuluaga55@hotmail.com";
+            this.Email = "jalax@4glsp.com";
             this.Password = "123456";
         }
         #endregion
@@ -111,19 +111,20 @@
                 return;
             }
 
-			var mainViewModel = MainViewModel.GetInstance();
+            var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Lands = new LandsViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
 
             this.IsRunning = false;
             this.IsEnabled = true;
+        }
+    }
+    //this.Email = string.Empty;
+    //this.Password = string.Empty;
 
-           this.Email = string.Empty;
-           this.Password = string.Empty;
-		*/
-		
-		}
-        // #endregion
+
+}
+         #endregion
 			
             /* var token = await this.apiService.GetToken(
                  "http://landsapi1.azurewebsites.net", 
@@ -158,4 +159,3 @@
 		
 		
     
-}
