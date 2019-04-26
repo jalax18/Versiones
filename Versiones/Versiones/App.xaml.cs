@@ -1,10 +1,12 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Versiones
 {
+    using Views;
+
+
     public partial class App : Application
     {
         public App()
@@ -12,6 +14,7 @@ namespace Versiones
             InitializeComponent();
 
             MainPage = new MainPage();
+            this.MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
