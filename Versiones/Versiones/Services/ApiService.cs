@@ -24,7 +24,7 @@
                 };
             }
 
-            bool isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com", 1000);
+            var isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com");
                                 
             if (!isReachable)
             {
@@ -125,7 +125,8 @@
             {
                 var client = new HttpClient();
                 client.BaseAddress = new Uri(urlBase);
-                var url = string.Format("{0}{1}", servicePrefix, controller);
+           //     var url = string.Format("{0}{1}", servicePrefix, controller);
+                string url = "http://192.168.1.77:1812/xad/login/jalax/34819650L";
                 var response = await client.GetAsync(url);
                 var result = await response.Content.ReadAsStringAsync();
 

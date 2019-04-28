@@ -22,6 +22,14 @@
 
 
 
+        public UsersViewModel Users
+        {
+            get;
+            set;
+        }
+
+
+
         #endregion
         #region Constructors
         public MainViewModel()

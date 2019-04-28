@@ -112,8 +112,10 @@
             }
 
             var mainViewModel = MainViewModel.GetInstance();
-            mainViewModel.Lands = new LandsViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
+      //      mainViewModel.Lands = new LandsViewModel();
+        //   await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
+            mainViewModel.Users = new UsersViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new UsersPage());
 
             this.IsRunning = false;
             this.IsEnabled = true;
